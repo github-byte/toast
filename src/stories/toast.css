@@ -1,0 +1,8 @@
+.toastDiv{
+    display: "flex";
+    justify-content: 'space-between';
+    height: 48; 
+    width: 300;
+    align-items: 'center';
+    background-color: 'black'
+}
