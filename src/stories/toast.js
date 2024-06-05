@@ -8,18 +8,17 @@ import './toast.css'
 import * as Icon from '@storybook/icons'
 
 
-export const Toast = ({ editText = '', icon: NewIcon = null, action = true, divider = true, onClick = () => { } }) => (
+export const Toast = ({ editText = '', icon: NewIcon = null, action = true, divider = true, width='60%', onClick = () => { } }) => (
     <div style={{
         display: "flex",
         justifyContent: 'space-between',
         height: 48,
-        width: '25vw',
+        width: '100%',
         alignItems: 'center',
         backgroundColor: '#282829',
         padding: '12px',
         position: "absolute",
         bottom: 0,
-        left: '50%',
         borderRadius: 8
     }}>
         <div style={{ display: "flex", alignItems: 'center' }}>

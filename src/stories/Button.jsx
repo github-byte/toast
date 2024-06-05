@@ -5,7 +5,7 @@ import './button.css';
 /**
  * Primary UI component for user interaction
  */
-export const Button = ({ primary, backgroundColor, size, label, color, height, borderRadius, padding, fontSize, ...props }) => {
+export const Button = ({ primary, backgroundColor, size, label, color, height, borderRadius, padding, width, fontSize, ...props }) => {
   const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
   const colorObj = color && {color}
   const bgColor = backgroundColor && {backgroundColor}
@@ -21,6 +21,9 @@ export const Button = ({ primary, backgroundColor, size, label, color, height, b
   }
   if(fontSize){
     styleObj = {...styleObj, fontSize}
+  }
+  if(width){
+    styleObj = {...styleObj, width}
   }
   return (
     <button

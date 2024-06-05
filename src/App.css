@@ -12,6 +12,8 @@
     justify-content: center;
     font-family: sans-serif;
     align-items: center;
-    margin: 10% 20%;
+    margin: 10% 7%;
+    height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+    height: calc(var(--vh, 1vh) * 100);
   }
 }
